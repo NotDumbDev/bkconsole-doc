@@ -1,0 +1,39 @@
+site_name: BKConsole Documentation
+site_url: https://idk.example
+theme:
+  name: material
+  palette: 
+    scheme: slate
+    primary: teal
+    accent: indigo
+  icon:
+    logo: fontawesome/solid/bars
+  favicon: assets/favicon.ico
+  features:
+    - content.tabs.link
+    - content.tooltips
+
+extra_css:
+  - stylesheets/extra.css
+  
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - md_in_html
+  - pymdownx.blocks.caption
+  - abbr
+  - pymdownx.tabbed:
+      alternate_style: true
+
+      
